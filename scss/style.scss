@@ -1,0 +1,151 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 16px;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.expression, .result {
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.bottom {
+
+}
+
+.bottom__container {
+    padding-left: 35px;
+    display: flex;
+    .line {
+        text-align: center;
+    }
+}
+
+.linear {
+    width: 875px;
+    height: 83px;
+    background-image: url('../sprite.png');
+    background-size: contain;
+}
+
+$tact: 40px;
+
+.line {
+    height: 50px;
+    position: relative;
+    .radius {
+        padding-bottom: 100%;
+        background-image: url('../arrow.svg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    .number {
+        top: -30px;
+    }
+    &_1 {
+        width: $tact;
+        .radius {
+            width: $tact;
+            top: 80%;
+        }
+    }
+    &_2 {
+        width: $tact * 2;
+        .radius {
+            width: $tact * 2;
+            top: 40%;
+        }
+    }
+    &_3 {
+        width: $tact * 3;
+        .radius {
+            width: $tact * 3;
+            top: -5%;
+        }
+    }
+    &_4 {
+        width: $tact * 4;
+        .radius {
+            width: $tact * 4;
+            top: -50%;
+        }
+    }
+    &_5 {
+        width: $tact * 5;
+        .radius {
+            width: $tact * 5;
+            top: -100%;
+        }
+    }
+    &_6 {
+        width: $tact * 6;
+        .radius {
+            width: $tact * 6;
+            top: -145%;
+        }
+    }
+    &_7 {
+        width: $tact * 7;
+        .radius {
+            width: $tact * 7;
+            top: -195%;
+        }
+    }
+    &_8 {
+        width: $tact * 8;
+        .radius {
+            top: -245%;
+            width: $tact * 8;
+        }
+    }
+    &_9 {
+        width: $tact * 9;
+        .radius {
+            top: -295%;
+            width: $tact * 9;
+        }
+    }
+
+
+}
+
+.number-label {
+    &_error {
+        background-color: orange;
+    }
+    &_validate {
+        background-color: transparent;
+        border: 0;
+        color: black;
+    }
+}
+
+.number {
+    position: relative;
+    z-index: 2;
+    width: 24px;
+    height: 24px;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    &_big {
+        width: 48px;
+        height: 30px;
+    }
+    &_input-error {
+        color: red;
+    }
+}

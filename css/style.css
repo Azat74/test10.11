@@ -1,0 +1,109 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body {
+  font-size: 16px; }
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; }
+
+.expression, .result {
+  font-size: 2rem;
+  margin-bottom: 5rem; }
+
+.bottom__container {
+  padding-left: 35px;
+  display: flex; }
+  .bottom__container .line {
+    text-align: center; }
+
+.linear {
+  width: 875px;
+  height: 83px;
+  background-image: url("../sprite.png");
+  background-size: contain; }
+
+.line {
+  height: 50px;
+  position: relative; }
+  .line .radius {
+    padding-bottom: 100%;
+    background-image: url("../arrow.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0; }
+  .line .number {
+    top: -30px; }
+  .line_1 {
+    width: 40px; }
+    .line_1 .radius {
+      width: 40px;
+      top: 80%; }
+  .line_2 {
+    width: 80px; }
+    .line_2 .radius {
+      width: 80px;
+      top: 40%; }
+  .line_3 {
+    width: 120px; }
+    .line_3 .radius {
+      width: 120px;
+      top: -5%; }
+  .line_4 {
+    width: 160px; }
+    .line_4 .radius {
+      width: 160px;
+      top: -50%; }
+  .line_5 {
+    width: 200px; }
+    .line_5 .radius {
+      width: 200px;
+      top: -100%; }
+  .line_6 {
+    width: 240px; }
+    .line_6 .radius {
+      width: 240px;
+      top: -145%; }
+  .line_7 {
+    width: 280px; }
+    .line_7 .radius {
+      width: 280px;
+      top: -195%; }
+  .line_8 {
+    width: 320px; }
+    .line_8 .radius {
+      top: -245%;
+      width: 320px; }
+  .line_9 {
+    width: 360px; }
+    .line_9 .radius {
+      top: -295%;
+      width: 360px; }
+
+.number-label_error {
+  background-color: orange; }
+
+.number-label_validate {
+  background-color: transparent;
+  border: 0;
+  color: black; }
+
+.number {
+  position: relative;
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  outline: none;
+  text-align: center; }
+  .number_big {
+    width: 48px;
+    height: 30px; }
+  .number_input-error {
+    color: red; }
