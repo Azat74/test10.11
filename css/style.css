@@ -31,20 +31,21 @@ html, body {
   height: 50px;
   position: relative; }
   .line .radius {
-    padding-bottom: 100%;
+    padding-bottom: 20%;
     background-image: url("../arrow.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: absolute;
     left: 0;
-    right: 0; }
+    right: 0;
+    top: 0 !important;
+    bottom: 0 !important; }
   .line .number {
     top: -30px; }
   .line_1 {
     width: 40px; }
     .line_1 .radius {
-      width: 40px;
-      top: 80%; }
+      width: 40px; }
   .line_2 {
     width: 80px; }
     .line_2 .radius {
